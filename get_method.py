@@ -19,12 +19,15 @@ driver.get("http://suninjuly.github.io/math.html")
 
 
 # Передаем значение в функцию
-# cosx = driver.find_element_by_xpath(["input_value"])
-# print(cosx)
-x = 112
+x_element = driver.find_element_by_css_selector("#input_value")
+x = x_element.text
 
-# def calc(x):
-#   return str(math.log(abs(12*math.sin(int(x)))))
+def calc(x):
+  return str(math.log(abs(12*math.sin(int(x)))))
+
+
+y = calc(x)
+
 
 # Метод find_element_by_css_selector позволяет найти нужный элемент на сайте, указав путь к нему. Способы поиска элементов мы обсудим позже
 # Ищем поле для ввода текста
@@ -33,7 +36,7 @@ textarea = driver.find_element_by_id("answer")
 
 
 # Напишем текст ответа в найденное поле
-textarea.send_keys(x)
+textarea.send_keys(y)
 
 
 checkbox = driver.find_element_by_id("robotCheckbox")

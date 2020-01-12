@@ -18,9 +18,16 @@ driver.get("http://suninjuly.github.io/get_attribute.html")
 # time.sleep(5)
 
 
+# Найти значение в сундуке
+# <img src="images/chest.png" height="40" width="40" id="treasure" valuex="117">
+int_element = driver.find_element_by_id("treasure")
+int_finde = int_element.get_attribute("valuex")
+print(int_finde)
+x = int_finde
+
 # Передаем значение в функцию
-x_element = driver.find_element_by_css_selector("#input_value")
-x = x_element.text
+# x_element = driver.find_element_by_css_selector("#input_value")
+# x = x_element.text
 
 def calc(x):
   return str(math.log(abs(12*math.sin(int(x)))))

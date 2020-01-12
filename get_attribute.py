@@ -14,7 +14,7 @@ time.sleep(1)
 
 # Метод get сообщает браузеру, что нужно открыть сайт по указанной ссылке
 # driver.get("https://stepik.org/lesson/25969/step/12")
-driver.get("http://suninjuly.github.io/math.html")
+driver.get("http://suninjuly.github.io/get_attribute.html")
 # time.sleep(5)
 
 

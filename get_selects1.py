@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 
-import math
 import time
 
 # webdriver это и есть набор команд для управления браузером
 from selenium import webdriver
-from  selenium.webdriver.support.ui import Select
+from selenium.webdriver.support.ui import Select
 
 # инициализируем драйвер браузера. После этой команды вы должны увидеть новое открытое окно браузера
 driver = webdriver.Chrome()

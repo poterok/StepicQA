@@ -37,6 +37,8 @@ y = calc(x)
 # Найдём атрибут "checked" с помощью встроенного метода get_attribute и проверим его значение
 people_radio = driver.find_element_by_id("peopleRule")
 
+123
+
 people_checked = people_radio.get_attribute("checked")
 print("value of people radio: ", people_checked)
 assert people_checked is not None, "People radio is not selected by default"
